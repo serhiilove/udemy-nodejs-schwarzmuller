@@ -1,0 +1,22 @@
+{
+  "name": "udemy-nodejs-schwarzmuller",
+  "version": "1.0.0",
+  "description": "NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serhiilove/udemy-nodejs-schwarzmuller.git"
+  },
+  "author": "Serhii Kyslovets",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/serhiilove/udemy-nodejs-schwarzmuller/issues"
+  },
+  "homepage": "https://github.com/serhiilove/udemy-nodejs-schwarzmuller#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
