@@ -7,10 +7,13 @@ app.use((req, res, next) => {
     next();
 })
 
-app.get('/', (req, res) => {
-    res.send('Hello world!');
+app.use('/', (req, res) => {
+    res.send('This is root page');
 });
 
+app.get('/users', (req, res) => {
+    res.send('This is users page')
+})
 
 app.listen(port, () => {
     console.log(`App listening on port ${port}`);
