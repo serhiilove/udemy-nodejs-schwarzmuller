@@ -3,8 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Main page</title>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <p>Test</p>
+    <form method="post" class="user-form">
+        <label for="name">Username</label>
+        <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter username"
+            required
+        />
+        <button>Submit</button>
+    </form>
 </body>
 </html>

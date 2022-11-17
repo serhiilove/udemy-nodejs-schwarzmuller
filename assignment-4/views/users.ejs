@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="users-wrap">
+        <ul>
+            <% users.forEach(user => {%>
+                <li><%= user %></li>
+            <% })%>
+        </ul>
+    </div>
+</body>
+</html>

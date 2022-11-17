@@ -1,0 +1,32 @@
+.user-form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 32px auto 0;
+    padding: 40px 20px;
+    background-color: aliceblue;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
+label {
+    margin-bottom: 4px;
+    margin-left: 8px;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+input {
+    height: 32px;
+    padding: 4px 8px;
+    margin-bottom: 32px;
+    font-size: 16px;
+}
+
+button {
+    width: 120px;
+    height: 32px;
+    align-self: center;
+    font-size: 16px;
+}
+
