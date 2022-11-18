@@ -8,7 +8,7 @@ const router = express.Router();
 const urlParser = bodyParser.urlencoded({ extended: false });
 
 router.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/index.html'));
+    res.render(path.join(__dirname, '/views/index'));
 });
 
 router.post('/', urlParser, (req, res) => {

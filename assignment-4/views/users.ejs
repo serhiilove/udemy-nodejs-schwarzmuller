@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Main page</title>
-    <link rel="stylesheet" href="styles/main.css">
-</head>
+<%- include('includes/head', { title: 'Users' })%>
+
 <body>
+    <p class="users-caption">Users list</p>
     <div class="users-wrap">
         <ul>
             <% users.forEach(user => {%>
