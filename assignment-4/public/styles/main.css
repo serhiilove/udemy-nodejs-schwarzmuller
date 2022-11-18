@@ -54,3 +54,9 @@ button {
     padding: 2px 0;
 }
 
+.not-found-text {
+    font-family: sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
