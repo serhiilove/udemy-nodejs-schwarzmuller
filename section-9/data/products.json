@@ -1,7 +1,1 @@
-[{
-  "id": "12345",
-  "title":"A Book",
-  "imageUrl":"https://www.publicdomainpictures.net/pictures/10000/velka/1-1210009435EGmE.jpg",
-  "description":"This is an awesome book!",
-  "price":"19"
-}]
+[{"id":"12345","title":"A Book sd","imageUrl":"https://www.publicdomainpictures.net/pictures/10000/velka/1-1210009435EGmE.jpg","description":"19","price":"sd"},{"id":"0.056799552500269135","title":"Sapiens","imageUrl":"https://www.britishbook.ua/upload/resize_cache/iblock/936/t6nju3lqvsmd6bkk01wuvqthjct1anoc/292_448_174b5ed2089e1946312e2a80dcd26f146/kniga_sapiens_a_brief_history_of_humankind.png","description":"20.04","price":"                Test\r\n            "}]
