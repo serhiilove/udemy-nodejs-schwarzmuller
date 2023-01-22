@@ -47,25 +47,28 @@ exports.getCart = (req, res, next) => {
         }
       }
 
-      console.log('cartProducts: ', cartProducts);
-
       res.render('shop/cart', {
         path: '/cart',
         pageTitle: 'Your Cart',
         products: cartProducts
       });
     });
-
-
   });
 };
 
+exports.postCartDeleteProduct = (req, res, next) => {
+  const prodId = req.body.productId;
+  Product.findById(prodId, product => {
+    Cart.deleteProduct(prodId, product.price);
+    res.redirect('/cart');
+  });
+
+}
+
 exports.postCart = (req, res, next) => {
   const prodId = req.body.productId;
-  console.log('prodId: ', prodId);
 
   Product.findById(prodId, (product) => {
-    console.log('product: ', product);
     Cart.addProduct(prodId, product.price);
   });
 };
