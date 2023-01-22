@@ -9,7 +9,7 @@
             <% } else { %>
             <ul>
                 <% products.forEach(p => { %>
-                    <li><%= p.title %></li>
+                    <li><%= p.title %> (<%= p.qty %>)</li>
                 <% }) %>
             </ul>
             <% } %>
