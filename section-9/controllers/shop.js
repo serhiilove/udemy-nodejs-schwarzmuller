@@ -43,10 +43,12 @@ exports.getCart = (req, res, next) => {
 };
 
 exports.postCart = (req, res, next) => {
-  const productId = req.body.productId;
+  const prodId = req.body.productId;
+  console.log('prodId: ', prodId);
 
-  Product.findById(productId, (product) => {
-    Cart.addProduct(productId, product.price);
+  Product.findById(prodId, (product) => {
+    console.log('product: ', product);
+    Cart.addProduct(prodId, product.price);
   });
 };
 

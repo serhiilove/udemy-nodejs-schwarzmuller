@@ -67,3 +67,11 @@ exports.getProducts = (req, res, next) => {
     });
   });
 };
+
+exports.postDeleteProduct = (req, res, next) => {
+  Product.fetchAll(products => {
+    const prodId = req.body.productId;
+    Product.deleteById(prodId);
+    res.redirect('/admin/products');
+  })
+}
