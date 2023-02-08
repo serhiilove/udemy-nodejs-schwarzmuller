@@ -42,12 +42,15 @@ class User {
          });
   }
 
-  deleteFromCart(prodId) {
-    const updatedCart = {
-        items: this.cart.items.filter(i => i.productId.toString() !== prodId.toString())
-    }
+  deleteItemFromCart(prodId) {
+    const updatedCartItems = this.cart.items.filter(i => i.productId.toString() !== prodId.toString());
+
     const db = getDb();
-    return db.collection('users').updateOne({ _id: this._id }, { $set: { cart: updatedCart }});
+    return db.collection('users').updateOne({
+        _id: new mongodb.ObjectId(this._id)
+    }, {
+        $set: { cart: { items: updatedCartItems } }
+    });
   }
 
   getCart() {
