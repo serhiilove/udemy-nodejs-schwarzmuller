@@ -44,7 +44,6 @@ exports.postSignup = (req, res, next) => {
           password: password,
           cart: { items: [] }
         });
-        console.log('123')
         return user.save();
       })
       .then(result => {
