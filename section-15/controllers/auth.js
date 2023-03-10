@@ -1,4 +1,7 @@
-const bcrypt = require('bcryptjs')
+const bcrypt = require('bcryptjs');
+// const nodemailer = require('nodemailer');
+// const sendgridTransport = require('nodemailer-sendgrid-transport');
+
 const User = require('../models/user');
 
 exports.getLogin = (req, res, next) => {
